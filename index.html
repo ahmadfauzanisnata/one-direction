@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The ultimate One Direction fan experience with music, videos and gallery">
+    <meta name="keywords" content="One Direction, 1D, Harry Styles, Louis Tomlinson, Niall Horan, Liam Payne, Zayn Malik">
+    <title>One Direction Ultimate Fan Experience</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Montserrat:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="1D.jpg" as="image">
+    <link rel="preload" href="night-changes.mp3" as="audio">
+</head>
+<body>
+    <div class="parallax-background"></div>
+    
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="main-title">
+                <span class="title-word">One</span>
+                <span class="title-word">Direction</span>
+            </h1>
+            <p class="subtitle">The Ultimate Fan Experience</p>
+            
+            <div class="social-links">
+                <a href="https://facebook.com/onedirection" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/onedirection" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/onedirection" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/onedirection" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#video-section" class="nav-link">Videos</a></li>
+                <li><a href="#audio-section" class="nav-link">Music</a></li>
+                <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section id="video-section" class="media-section">
+            <div class="section-header">
+                <h2>Night Changes Music Video</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video class="featured-video" controls preload="metadata" poster="video-poster.jpg">
+                        <source src="klip video.mp4" type="video/mp4">
+                        <source src="night-changes.webm" type="video/webm">
+                        <track label="English" kind="subtitles" srclang="en" src="subtitles.vtt" default>
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                </div>
+                <div class="video-info">
+                    <h3>Night Changes</h3>
+                    <p>From the album "FOUR" (2014)</p>
+                    <p class="video-description">The official music video for One Direction's hit single "Night Changes" from their fourth studio album.</p>
+                    <div class="video-stats">
+                        <span><i class="fas fa-eye"></i> 1.2B views</span>
+                        <span><i class="fas fa-thumbs-up"></i> 15M likes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="audio-section" class="media-section">
+            <div class="section-header">
+                <h2>Listen to Their Music</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="audio-player">
+                <div class="album-art">
+                    <img src="1D.jpg" alt="FOUR Album Cover" class="rotating">
+                </div>
+                <div class="player-controls">
+                    <div class="song-info">
+                        <h3>Night Changes</h3>
+                        <p>One Direction - FOUR</p>
+                    </div>
+                    <audio controls>
+                        <source src="night changes.mp3" type="audio/mp3">
+                    </audio>
+                   
+                </div>
+            </div>
+            
+            <div class="playlist">
+                <h3>Popular Songs</h3>
+                <ul class="song-list">
+                    <li class="song-item">
+                        <div class="song-number">1</div>
+                        <div class="song-info">
+                            <h4>What Makes You Beautiful</h4>
+                            <p>Up All Night • 2011</p>
+                            <audio controls>
+                                <source src="what makes you beautiful.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <button class="play-song-btn"><i class="fas fa-play"></i></button>
+                    </li>
+                    <li class="song-item">
+                        <div class="song-number">2</div>
+                        <div class="song-info">
+                            <h4>Story of My Life</h4>
+                            <p>Midnight Memories • 2013</p>
+                            <audio controls>
+                                <source src="story of mmy life.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <button class="play-song-btn"><i class="fas fa-play"></i></button>
+                    </li>
+                    <li class="song-item">
+                        <div class="song-number">3</div>
+                        <div class="song-info">
+                            <h4>Drag Me Down</h4>
+                            <p>Made in the A.M. • 2015</p>
+                            <audio controls>
+                                <source src="drag me down.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <button class="play-song-btn"><i class="fas fa-play"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="gallery-section" class="media-section">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-main">
+                    <div class="main-image">
+                        <img src="1D.jpg" alt="One Direction Group Photo" class="active">
+                    </div>
+                    <div class="image-info">
+                        <h3>One Direction</h3>
+                        <p>From left: Louis Tomlinson, Harry Styles, Niall Horan, Liam Payne, and Zayn Malik</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-thumbnails">
+                    <div class="thumbnail active">
+                        <img src="zayn.jpg" alt="1D Thumbnail 1">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="nial.jpg" alt="1D Thumbnail 2">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="louis.jpg" alt="1D Thumbnail 3">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="harry.jpg" alt="1D Thumbnail 4">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="Liam Payne.jpg" alt="1D Thumbnail 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section" class="media-section">
+            <div class="section-header">
+                <h2>About One Direction</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="member-cards">
+                    <div class="member-card">
+                        <div class="member-image">
+                            <img src="harry.jpg" alt="Harry Styles">
+                        </div>
+                        <div class="member-info">
+                            <h3>Harry Styles</h3>
+                            <p>Born: February 1, 1994</p>
+                            <p>Vocal Range: Tenor</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other members -->
+                </div>
+                
+                <div class="band-history">
+                    <h3>Band History</h3>
+                    <p>One Direction (commonly abbreviated as 1D) is an English-Irish pop boy band formed in London in 2010. The group is composed of Niall Horan, Liam Payne, Harry Styles, Louis Tomlinson, and previously Zayn Malik until his departure from the group in 2015.</p>
+                    <p>They became one of the best-selling boy bands of all time before going on an indefinite hiatus in 2016.</p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2010</div>
+                            <div class="timeline-content">Formed on The X Factor</div>
+                        </div>
+                        <!-- More timeline items -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>One Direction</h2>
+                <p>The Ultimate Fan Experience</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Discography</a></li>
+                        <li><a href="#">Tour Dates</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link-group">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 One Direction Fan Club. All rights reserved.</p>
+            <p>This is an unofficial fan site not affiliated with One Direction or their management.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
